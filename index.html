@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YummyHut</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>YummyHut</h1>
+    </header>
+
+    <main>
+        <!-- Menu Section -->
+        <section id="menu">
+            <h2>Our Menu</h2>
+            <div class="menu-item">
+                <p>Pizza - ₹385</p>
+                <img src="https://images5.alphacoders.com/357/thumb-1920-357914.jpg" alt="Pizza" width="50" />
+                <button onclick="addToCart('Pizza', 385)">Add to Cart</button>
+            </div>
+            <div class="menu-item">
+                <p>Burger - ₹180</p>
+                <img src="https://cdn3.tmbi.com/secure/RMS/attachments/37/1200x1200/exps28800_UG143377D12_18_1b_RMS.jpg" alt="Burger" width="50" />
+                <button onclick="addToCart('Burger', 180)">Add to Cart</button>
+            </div>            
+            <div class="menu-item">
+                <p>Pasta - ₹250</p>
+                <img src="https://tse1.mm.bing.net/th?id=OIP.64vXNk6FRg6TzVCW7u2zLAHaFj&pid=Api&P=0&h=180" alt="Pasta" width="50" />
+                <button onclick="addToCart('Pasta', 250)">Add to Cart</button>
+            </div>
+            <div class="menu-item">
+                <p>Fries - ₹160</p>
+                <img src="https://tse2.mm.bing.net/th?id=OIP.GqUvr8wmgKYa7LL8YpnGMAHaE7&pid=Api&P=0&h=180" alt="Fries" width="50" />
+                <button onclick="addToCart('Fries', 160)">Add to Cart</button>
+            </div>
+            <div class="menu-item">
+                <p>Coke - ₹45</p>
+                <img src="https://tse4.mm.bing.net/th?id=OIP.hf05PnUIY0qljuWeZc8pAQHaGb&pid=Api&P=0&h=180" alt="Coke" width="50" />
+                <button onclick="addToCart('Coke', 45)">Add to Cart</button>
+            </div>
+            <div class="menu-item">
+                <p>Thumsup - ₹23</p>
+                <img src="https://images.cnbctv18.com/wp-content/uploads/2022/02/thums-up-1.png?impolicy=website&width=1200&height=900" alt="Thumsup" width="50" />
+                <button onclick="addToCart('Thumsup', 23)">Add to Cart</button>
+            </div>
+            <div class="menu-item">
+                <p>friut salad - ₹285</p>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAjTQqGcaNAmKvhP_7kX1jxNSBtS49ETRsJw&s" alt="FriutSalad" width="50"/>
+                <button onclick="addToCart('FruitSalad',285)">Add to Cart</button>
+            </div>
+            <div class="menu-item">
+                <p>chicken kabab - ₹285</p>
+                <img src="https://www.thetakeiteasychef.com/wp-content/uploads/2016/12/unpaid-review-easterns-kebab-masala.1024x1024-3.png" alt="Chicken Kabab" width="50"/>
+                <button onclick="addToCart('ChickenKabab',285)">Add to Cart</button>
+            </div>
+            <div class="menu-item">
+                <p>chicken Wings - ₹255</p>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHykD4iDd0RbUZNjGvlMI456YLiqz-vB2gxw&s" alt="Chicken Wings" width="50"/>
+                <button onclick="addToCart('ChickenWings',255)">Add to Cart</button>
+            </div>
+            
+            <div class="menu-item">
+                <p>chicken lollipops - ₹235</p>
+            <img src="https://www.theloveofspice.com/wp-content/uploads/2020/09/restaurant-style-chicken-lollipop-500x500.jpg" alt="Chicken Lollipops" width="50"/>
+                <button onclick="addToCart('Chicken lollipops',235)">Add to Cart</button>
+            </div>
+            <div class="menu-item">
+                <p>chicken Pizza-₹400</p>
+                <img src="https://bluebowlrecipes.com/wp-content/uploads/2019/05/barbecue-chicken-pizza-0917.jpg" alt="Chicken Pizza" width="50"/>
+                <button onclick="addToCart('Chicken Pizza',400)">Add to Cart</button>
+            </div>
+            
+            <div class="menu-item">
+                <p>chicken Burger-₹200</p>
+                <img src="https://www.chicken.ca/wp-content/uploads/2013/05/Moist-Chicken-Burgers.jpg" alt="Chicken Burger" width="50"/>
+                <button onclick="addToCart('Chicken Burger',200)">Add to Cart</button>
+            </div>
+            <div class="menu-item">
+                <p>chicken Sandwich-₹250</p>
+                <img src="https://i.ytimg.com/vi/yQyx7Hkww98/sddefault.jpg" alt="Chicken Sandwich" width="50"/>
+                <button onclick="addToCart('Chicken Sandwich',250)">Add to Cart</button>
+            </div>
+        </section>
+
+        <!-- Cart Section -->
+        <section id="cart">
+            <h2>Your Cart</h2>
+            <ul id="cart-items"></ul>
+            <p id="total">Total: ₹0</p>
+            <button id="checkout" onclick="checkout()">Checkout</button>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
