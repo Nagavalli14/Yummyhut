@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - YummyHut</title>
+    <link rel="loginsheet" href="login.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to YummyHut</h1>
+    </header>
+
+    <main>
+        <section id="login">
+            <h2>Login</h2>
+            <form id="loginForm" onsubmit="return handleLogin(event)">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+
+                <label for="phoneNumber">Phone Number:</label>
+                <input type="tel" id="phoneNumber" name="phoneNumber" pattern="[0-9]{10}" required>
+
+                <button type="button" onclick="sendOTP()">Send OTP</button>
+                <label for="otp">Enter OTP:</label>
+                <input type="text" id="otp" name="otp" required disabled>
+
+                <button type="submit">Login</button>
+            </form>
+            <p id="message"></p>
+        </section>
+    </main>
+
+    <script src="login.js"></script>
+</body>
+</html>
