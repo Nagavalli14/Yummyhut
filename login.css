@@ -1,0 +1,63 @@
+/* Styling the Login Section */
+#login {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #444; /* Dark border for better contrast */
+    border-radius: 8px;
+    background: rgba(0, 0, 0, 0.8); /* Dark translucent background */
+    color: white; /* White text color */
+}
+
+/* Login Header */
+#login h2 {
+    text-align: center;
+    color: #007bff; /* Blue color for the heading */
+}
+
+/* Label Styling */
+form label {
+    display: block;
+    margin-top: 10px;
+    color: white; /* White label text */
+}
+
+/* Input Fields Styling */
+form input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #555; /* Darker border for input fields */
+    border-radius: 5px;
+    background-color: #222; /* Dark background for inputs */
+    color: white; /* White text inside inputs */
+}
+
+/* Placeholder Text */
+form input::placeholder {
+    color: #aaa; /* Light gray placeholder text */
+}
+
+/* Button Styling */
+form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff; /* Primary blue button */
+    color: white; /* White button text */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+form button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Optional Styling for Message Paragraph */
+#message {
+    color: #f3f3f3; /* Light gray for any message text */
+    text-align: center;
+    margin-top: 10px;
+}
